@@ -1,0 +1,53 @@
+/* 選擇器 & BOX概念 */
+html {
+	/* font-size: 10px; */
+	font-family: 'Itim', cursive; /* 字型 */
+	background-color: #e5ff00;  /* 元素內容和矩形內容後面的背景顏色 */
+  }
+
+/* 每個 box 都有屬性：margin, border, padding */
+body {
+	width: 700px;       /* 元素的寬度 */
+	margin: 0 auto;     /* 元素外部的空間 */
+	background-color: #FF9500; 
+	padding: 0 20px 20px 20px;    /* 內容周圍的空格（例如，段落文字周圍） */
+	border: 5px solid black;    /* 位於矩形內容外部的實線 */
+}
+
+/* 設定我們主要頁面標題的位置（Positioning）和風格（styling） */
+h1 {
+	font-size: 60px;     /* 字體大小 */
+    text-align: center;  /* 置中 */
+	margin: 0;
+	padding: 20px 0;
+	color: #00539F;   /* 元素內容的顏色 */
+	text-shadow: 3px 3px 1px black; /* 在元素內的文字上設置陰影 */
+}
+
+/* 圖像置中 */
+img {
+	display: block; /* 設置元素的顯示模式 (?) */
+	margin: 0 auto;
+  }
+
+a {
+	display: block;
+    text-align: center;	
+	margin: 0;
+}
+  
+p {
+	color: red;
+	width: 500px; /* px means 'pixels': the base font size is now 10 pixels high  */
+	border: 1px solid black;
+  }
+
+li,h1 {
+	color: blue;
+  }  
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}

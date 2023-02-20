@@ -18,7 +18,7 @@
                     <svg class="align-top" xmlns="http://www.w3.org/2000/svg"  height="30" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
                         <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                     </svg>
-                    X Shop
+                    AIC Shop
                 </a>
                 
                 <a class="nav-link text-warning d-block d-lg-none" href="#">登入</a>
@@ -70,7 +70,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg"  height="100" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
                         <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                     </svg>
-                    <div class="h1 mt-2">歡迎來到X Shop</div>
+                    <div class="h1 mt-2">歡迎來到AIC Shop</div>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
                     <div class="input-group mb-2 border border-secondary rounded">
@@ -174,7 +174,20 @@
 
             <div class="col-10 ms-5 ms-md-0">
                 <!-- 右側產品類別 -->
-                <ul class="nav nav-tabs">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                            3C類別 1
+                        </button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            3C類別 2
+                        </button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            3C類別 3
+                        </button>
+                    </div>
+                </nav>
+                <!-- <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">3C類別 1</a>
                     </li>
@@ -184,46 +197,84 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">3C類別 3</a>
                     </li>
-                </ul>
-
+                </ul> -->
+                
                 <!-- 右側產品內容 -->
-                <div class="row row-cols-1 row-cols-lg-4 g-4">
-                    <div class="col-lg">
-                        <div class="card shadow-lg">
-                            <img src="https://www.aiotcloud.dev/images/aic-web-logo_opc-ua.png" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Product1</h3>
-                                <p class="card-text h4 text-danger"><b>3000$</b></p>
-                                <p class="card-text">
-                                    introduction
-                                </p>
-                                <button class="btn btn-primary">more</button>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                    <div class="row row-cols-1 row-cols-lg-4 g-4">
+                        <div class="col-lg">
+                            <div class="card shadow-lg">
+                                <img src="https://www.aiotcloud.dev/images/aic-web-logo_opc-ua.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title"><b>Opc Ua</b></h3>
+                                    <p class="card-text h5 text-danger"><b>NTD$3,226</b></p>
+                                    <p class="card-text ">
+                                        AIC Opc Ua為一套工業用通訊協定標準，能使機器與機器間(M2M)的數位資料進行交換，Opc Ua一開始發展可溯及1996年OPC基金會的OPC(Open Platform Communications)是用於工業自動化的通訊協定標準，符合OPC標準的設備透過OPC將即時資料傳送給Server端，使用者透過Client端來取得即時資料，以完成即時監控設備 ...
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-primary">more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="card shadow-lg">
+                                <img src="https://www.aiotcloud.dev/images/aic-web-logo_videowal.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title"><b>Video Wall</b></h3>
+                                    <p class="card-text h5 text-danger"><b>NTD$32,258</b></p>
+                                    <p class="card-text">
+                                        能由1X2至4X4進行螢幕分割畫面，不需任何硬體設備即可直接進行螢幕的畫面分割，能同時支援Chrome瀏覽器、Microsoft office(包括PowerPoint、Word、Excel等)、4K電視等多媒體內容與橫幅廣告、影片、動畫、影像、3D模型、Widget小工具等播放、投影簡報與表格等豐富的視覺展現，螢幕解析度達16K，使用者能隨心所欲調整播放的方式，也可以自訂播放腳本設計，適用於各種需互動顯示的產業 ...
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-primary">more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="card shadow-lg">
+                                <img src="https://www.aiotcloud.dev/images/aic-web-logo_iot-studio.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title"><b>IoT Studio</b></h3>
+                                    <p class="card-text h5 text-danger"><b>NTD$9,677</b></p>
+                                    <p class="card-text">
+                                        AIC IoT Studio是以Node-RED為基礎的物聯網開發工具，物聯雲AIoT發展出可無程式碼(Codeless)化的節點拖曳方式，以可視化的開發環境設定工廠設備的機聯網流程管理，利用工業大數據發展出智慧工廠。
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-primary">more</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg">
-                        <div class="card shadow-lg">
-                            <img src="https://www.aiotcloud.dev/images/aic-web-logo_videowal.png" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Product2</h3>
-                                <p class="card-text h4 text-danger"><b>3000$</b></p>
-                                <p class="card-text">introduction</p>
-                                <button class="btn btn-primary">more</button>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-lg">
-                        <div class="card shadow-lg">
-                            <img src="https://www.aiotcloud.dev/images/aic-web-logo_iot-studio.png" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title">Product3</h3>
-                                <p class="card-text h4 text-danger"><b>3000$</b></p>
-                                <p class="card-text">introduction</p>
-                                <button class="btn btn-primary">more</button>
-                            </div>
-                        </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        123
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        321
                     </div>
                 </div>
+                <nav class="d-flex justify-content-center mt-4" aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -232,7 +283,7 @@
     <footer class="p-4 border-top">
         <div class="container d-flex align-items-center justify-content-between">
             <p class="mb-0 text-muted">
-                &copy; 2021 X Shop. All rights reserved.
+                &copy; 2021 AIC Shop. All rights reserved.
             </p>
             <ul class="nav">
                 <li class="nav-item"><a href="" class="nav-link text-muted">關於</a></li>
